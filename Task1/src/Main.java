@@ -11,8 +11,8 @@ public class Main {
 //        и затем 25 дюймов,но в сантиметрах.
         System.out.println("Задача 1");
         final double inch = 2.54;
-        System.out.println("10 сантиметров в фунтах равны  " + 10 / inch);
-        System.out.println("25 фунтов в сантиметрах равны " + 25 * inch);
+        System.out.println("10 сантиметров в дюймах равны  " + 10 / inch);
+        System.out.println("25 дюймов в сантиметрах равны " + 25 * inch);
         System.out.println("------------------------------------------------------");
 
 //        Задача 2.
@@ -96,9 +96,8 @@ public class Main {
 //        Положительное, или Отрицательное, или Ноль, -в зависимости от значения числа.
         System.out.println("Задача 7");
 
-        x = 0;
         System.out.println("Введите любое число");
-        while (x == 0) {
+        while (true) {
             try {
                 Scanner scanner2 = new Scanner(System.in);
                 x = scanner2.nextInt();
@@ -124,8 +123,7 @@ public class Main {
         System.out.println("Задача 8");
 
         System.out.println("Введите любое число");
-        x = 0;
-        while (x == 0) {
+        while (true) {
             try {
                 Scanner scanner3 = new Scanner(System.in);
                 x = scanner3.nextInt();
@@ -168,10 +166,10 @@ public class Main {
         int mul = unit * dec;
 
         if (x < mul){
-            System.out.println("Произведение чисел значения X больше самого Х");
-        } else {
-            System.out.println("Число Х больше произведения его чисел");
+            System.out.println("Произведение цифр числа X больше самого числа Х");
             //строка выше никогда не выведится, так как любое двухзначное число будет всегда больше произведения его чисел
+        } else {
+            System.out.println("Число Х больше произведения его цифр");
         }
     }
 }
